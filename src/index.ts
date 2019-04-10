@@ -2,9 +2,10 @@ import {FileMap, WSDLConsumer} from './wsdl-consumer';
 import {GenDirPath, GoogleAdsVersion, WSDLEndpoints} from './constant';
 import chalk from 'chalk';
 import {Spinner} from 'clui';
-import {EnumBuilder} from './enum-builder';
 import {FileHelper} from './file-helper';
 import {PackageBuilder} from './package-builder';
+import {IndexBuilder} from './index-builder';
+import {EnumBuilder} from './enum-builder';
 
 const consumer = new WSDLConsumer(GoogleAdsVersion, WSDLEndpoints);
 
@@ -16,6 +17,8 @@ FileHelper
 	.then(() => consumer.consume())
 	.then((map:FileMap) => {
 		const spinner = new Spinner(chalk`{cyan Generating enum files...}`);
+		(new IndexBuilder(map)).write();
+
 		spinner.start();
 		const builders:EnumBuilder[] = EnumBuilder.fromFileMap(map);
 		builders.forEach((builder) => builder.write());
