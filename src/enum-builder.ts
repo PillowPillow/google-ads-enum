@@ -24,7 +24,7 @@ export class EnumBuilder {
 		const enums = Array.from(this.enums.entries());
 		const enumStr:string[] = enums.map(([name, values]) => {
 			const content = values.map((value) => `\t${TextHelper.snakeToPascal(value)} = '${value}',\n`).join('');
-			return `enum ${name} {\n${content}}`;
+			return `export enum ${name} {\n${content}}`;
 		});
 		return WarnComment + enumStr.join('\n');
 	}

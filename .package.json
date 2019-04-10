@@ -1,5 +1,5 @@
 {
-	"name": "google-ads-enum",
+	"name": "@polochon/google-ads-enum",
 	"version": "{{version}}",
 	"description": "Google Ads API typescript enums",
 	"keywords": [
