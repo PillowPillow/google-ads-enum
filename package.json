@@ -6,6 +6,7 @@
 	"private": true,
 	"scripts": {
 		"build": "npm run build:generator && npm run build:lib",
+		"postbuild": "rimraf -r ./lib/*",
 		"prebuild:generator": "tsc",
 		"build:generator": "node ./dist/index.js",
 		"prebuild:lib": "rimraf -r ./lib-dist/*",
