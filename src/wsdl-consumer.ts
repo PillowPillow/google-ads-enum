@@ -57,7 +57,7 @@ export class WSDLConsumer {
 
 			if(nameParts.length > 1) {
 				fileName = nameParts[0];
-				constName = nameParts.join('');
+				constName = nameParts[1].indexOf(nameParts[0]) === 0 ? nameParts[1] : nameParts.join('');
 			}
 			else {
 				constName = fileName = nameParts[0];
