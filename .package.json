@@ -1,0 +1,13 @@
+{
+	"name": "google-ads-enum",
+	"version": "{{version}}",
+	"description": "Google Ads API typescript enums",
+	"keywords": [
+		"google",
+		"ads",
+		"typescript",
+		"enums"
+	],
+	"author": "Nicolas Gaignoux <gaignoux.nicolas@gmail.com>",
+	"license": "ISC"
+}
