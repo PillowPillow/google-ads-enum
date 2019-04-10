@@ -2,6 +2,7 @@
 	"name": "@polochon/google-ads-enum",
 	"version": "{{version}}",
 	"description": "Google Ads API typescript enums",
+	"main": "index.js",
 	"keywords": [
 		"google",
 		"ads",
