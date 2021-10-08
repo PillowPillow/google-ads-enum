@@ -1,6 +1,6 @@
 {
 	"name": "google-ads-enum-builder",
-	"version": "6.0.0",
+	"version": "8.0.0",
 	"description": "Google Ads API typescript enums builder",
 	"main": "index.js",
 	"private": true,
@@ -31,6 +31,6 @@
 		"xml-reader": "^2.4.3"
 	},
 	"dependencies": {
-		"google-ads-node": "^4.0.2"
+		"google-ads-node": "^6.1.3"
 	}
 }

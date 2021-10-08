@@ -3,8 +3,6 @@ import fs from 'fs';
 import * as Path from 'path';
 import {GenDirPath} from './constant';
 
-const GoogleAdsEnums = protos.google.ads.googleads.v6.enums;
-
 export const WarnComment = '// Do not edit - Generated from Google Ads WSDL\n\n';
 
 export class EnumBuilder {
@@ -21,7 +19,7 @@ export class EnumBuilder {
 		// Put all the enums inside an "enum" namespace
 		stream.write('\n// eslint-disable-next-line\n');
 
-		for (const [fullName, def] of Object.entries(GoogleAdsEnums)) {
+		for (const [fullName, def] of Object.entries(this.enums)) {
 			const [name] = fullName.split('Enum');
 			const values = def[name];
 			const pairs = Object.keys(values).map((key) => {
