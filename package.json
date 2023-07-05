@@ -31,6 +31,6 @@
 		"xml-reader": "^2.4.3"
 	},
 	"dependencies": {
-		"google-ads-node": "^7.0.0"
+		"google-ads-node": "^11.0.0"
 	}
 }
