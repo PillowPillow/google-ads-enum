@@ -1,6 +1,6 @@
 {
 	"name": "google-ads-enum-builder",
-	"version": "9.0.0",
+	"version": "14.0.0",
 	"description": "Google Ads API typescript enums builder",
 	"main": "index.js",
 	"private": true,
@@ -17,20 +17,21 @@
 	"author": "Nicolas Gaignoux <gaignoux.nicolas@gmail.com>",
 	"license": "ISC",
 	"devDependencies": {
-		"@types/command-line-usage": "^5.0.1",
-		"@types/node": "^14.14.41",
-		"axios": "^0.24.0",
-		"chalk": "^4.1.0",
+		"@types/command-line-usage": "^5.0.2",
+		"@types/node": "^18.17.14",
+		"axios": "^1.5.0",
+		"chalk": "^5.3.0",
+		"chalk-template": "^1.1.0",
 		"clear": "^0.1.0",
 		"clui": "^0.3.6",
-		"command-line-usage": "^6.1.1",
-		"minimist": "^1.2.5",
-		"rimraf": "^3.0.2",
+		"command-line-usage": "^7.0.1",
+		"minimist": "^1.2.8",
+		"rimraf": "^5.0.1",
 		"tslint": "^6.1.3",
-		"typescript": "^4.5.4",
+		"typescript": "^5.2.2",
 		"xml-reader": "^2.4.3"
 	},
 	"dependencies": {
-		"google-ads-node": "^7.0.0"
+		"google-ads-node": "^12.0.0"
 	}
 }

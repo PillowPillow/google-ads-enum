@@ -1,7 +1,7 @@
-import {protos} from 'google-ads-node';
+import { protos } from 'google-ads-node';
 import fs from 'fs';
 import * as Path from 'path';
-import {GenDirPath} from './constant';
+import { GenDirPath } from './constant';
 
 export const WarnComment = '// Do not edit - Generated from Google Ads WSDL\n\n';
 
@@ -20,8 +20,12 @@ export class EnumBuilder {
 		stream.write('\n// eslint-disable-next-line\n');
 
 		for (const [fullName, def] of Object.entries(this.enums)) {
+
 			const [name] = fullName.split('Enum');
 			const values = def[name];
+
+			if(!values) continue;
+
 			const pairs = Object.keys(values).map((key) => {
 				const protoVal = values[key];
 				return `${key} = '${key}', // ${protoVal}`;
