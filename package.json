@@ -7,10 +7,10 @@
 	"scripts": {
 		"sandbox": "rimraf ./sandbox-dist/* && tsc -p sandbox.tsconfig.json && node sandbox-dist/sandbox/index.js",
 		"build": "npm run build:generator && npm run build:lib",
-		"postbuild": "rimraf -r ./lib/*",
+		"postbuild": "rimraf ./lib/*",
 		"prebuild:generator": "tsc",
 		"build:generator": "node ./dist/index.js",
-		"prebuild:lib": "rimraf -r ./lib-dist/*",
+		"prebuild:lib": "rimraf ./lib-dist/*",
 		"build:lib": "tsc -p lib.tsconfig.json",
 		"postbuild:lib": "cp lib/package.json lib-dist/package.json",
 		"test": "echo \"Error: no test specified\" && exit 1"
