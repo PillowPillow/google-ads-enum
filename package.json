@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"private": true,
 	"scripts": {
+		"sandbox": "rimraf ./sandbox-dist/* && tsc -p sandbox.tsconfig.json && node sandbox-dist/sandbox/index.js",
 		"build": "npm run build:generator && npm run build:lib",
 		"postbuild": "rimraf -r ./lib/*",
 		"prebuild:generator": "tsc",

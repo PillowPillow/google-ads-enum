@@ -3,4 +3,5 @@ node_modules
 lib
 lib-dist
 dist
+sandbox-dist
 store.json
