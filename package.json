@@ -1,6 +1,6 @@
 {
 	"name": "google-ads-enum-builder",
-	"version": "14.0.1",
+	"version": "14.0.2",
 	"description": "Google Ads API typescript enums builder",
 	"main": "index.js",
 	"private": true,
