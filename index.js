@@ -1,10 +1,10 @@
 // import fs from "fs";
 // import {protos} from 'google-ads-node'
 const fs = require('fs');
-const { protos } = require('google-ads-node');
+const { protos } = require('polochon-google-ads-node');
 
-const Version = 'v14';
-const GoogleAdsEnums = protos.google.ads.googleads.v14.enums;
+const Version = 'v15';
+const GoogleAdsEnums = protos.google.ads.googleads.v15.enums;
 console.log(GoogleAdsEnums)
 
 for (const [fullName, def] of Object.entries(GoogleAdsEnums)) {

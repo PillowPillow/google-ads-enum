@@ -1,4 +1,4 @@
-import { protos } from 'google-ads-node';
+import { protos } from 'polochon-google-ads-node';
 import fs from 'fs';
 import * as Path from 'path';
 import { GenDirPath } from './constant';
